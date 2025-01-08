@@ -1,0 +1,17 @@
+export default {
+    Home: 'Home',
+    About: 'About',
+    Skills: 'Skills',
+    Contact: 'Contact',
+    Hello: 'Hello, My Name Is',
+    Name: 'Sardor Eshpolatov',
+    Profession: '- A passionate and dedicated junior developer, driven by the ever-evolving world of technology and its limitless possibilities.',
+    Read: 'My name is Eshpo\'latov Sardor, and I am a passionate frontend web developer. I have always been fascinated by the intersection of design and technology, and I am thrilled to be able to bring my creative ideas to life through coding. My primary focus is on frontend development, where I excel in crafting beautiful user interfaces that are both visually appealing and user-friendly. My technical skills include proficiency in HTML, CSS, JavaScript, and various frontend frameworks such as Vue and Nuxt.js. I am well-versed in responsive design principles, ensuring that websites look great and function seamlessly across different devices and screen sizes. Continuously learning and staying up-to-date with the latest trends and technologies is a priority for me. I am always exploring new tools, frameworks, and techniques to enhance my skills and deliver cutting-edge solutions to my clients.',
+    Youcan: 'You can reach me through:',
+    Phone: 'Phone: +998 94 021 79 78',
+    Email: 'Email: eshpolatovsardor@gmail.com',
+    GitHub: 'GitHub',
+    Telegram: 'Telegram',
+    Instagram: 'Instagram',
+    Dasturchi: 'Programmer',
+}

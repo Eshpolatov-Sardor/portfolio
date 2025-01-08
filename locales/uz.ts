@@ -1,0 +1,17 @@
+export default {
+    Home: 'Bosh sahifa',
+    About: 'Men Haqida',
+    Skills: 'Ko\'nikmalar',
+    Contact: 'Aloqa',
+    Hello: 'Salom, mening ismim',
+    Name: 'Sardor Eshpo\'latov',
+    Profession: '- Har doim rivojlanayotgan texnologiya olami va uning cheksiz imkoniyatlaridan kelib chiqqan ishtiyoqli va fidoyi yosh dasturchi.',
+    Read: 'Mening ismim Eshpo\'latov Sardor, men ishtiyoqli frontend veb-dasturchisiman. Meni har doim dizayn va texnologiyaning kesishishi qiziqtirgan va kodlash orqali ijodiy g‘oyalarimni hayotga tatbiq eta olganimdan juda xursandman. Mening asosiy e\'tiborim frontend ishlab chiqishga qaratilgan bo\'lib, men vizual jihatdan jozibali va foydalanuvchilarga qulay bo\'lgan chiroyli foydalanuvchi interfeyslarini yaratishda ustunlik qilaman. Mening texnik ko\'nikmalarim HTML, CSS, JavaScript va Vue va Nuxt.js kabi turli xil frontend ramkalarini bilishni o\'z ichiga oladi. Men sezgir dizayn tamoyillarini yaxshi bilaman, bu veb-saytlarning ajoyib ko\'rinishini va turli qurilmalar va ekran o\'lchamlarida muammosiz ishlashini ta\'minlaydi. Doimiy ravishda o\'rganish va so\'nggi tendentsiyalar va texnologiyalardan xabardor bo\'lish men uchun ustuvor vazifadir. Men doimo o\'z mahoratimni oshirish va mijozlarimga ilg\'or yechimlarni taqdim etish uchun yangi vositalar, ramkalar va texnikalarni o\'rganaman.',
+    Youcan: 'Menga quyidagi orqali murojaat qilishingiz mumkin:',
+    Phone: 'Telefon: +998 94 021 79 78',
+    Email: 'Elektron pochta: eshpolatovsardor@gmail.com',
+    GitHub: 'GitHub',
+    Telegram: 'Telegram',
+    Instagram: 'Instagram',
+    Dasturchi: 'Dasturchi',
+}
