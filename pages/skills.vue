@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, nextTick } from 'vue';
-import { useI18n } from 'vue-i18n';
+import { ref, onMounted, onUnmounted, nextTick } from "vue";
+import { useI18n } from "vue-i18n";
+
+
+useHead({
+  title: 'MY Skills',
+})
+
 
 const { t } = useI18n();
 const skillButtons = ref<HTMLElement[]>([]);
 const currentIndex = ref(0);
-const skillImage = ref<string>(''); // Using string for image source
+const skillImage = ref<string>(""); 
 const skillImageContainer = ref<HTMLElement | null>(null);
 let animationTimeout: any = null;
 
@@ -27,36 +33,46 @@ interface SkillIcons {
 }
 
 const skills = [
-  'html', 'css', 'tailwind', 'bootstrap', 'javascript', 'typescript', 'vue', 'nuxt', 'vee', 'pinia', 'git', 'github'
+  "html",
+  "css",
+  "tailwind",
+  "bootstrap",
+  "javascript",
+  "typescript",
+  "vue",
+  "nuxt",
+  "vee",
+  "pinia",
+  "git",
+  "github",
 ];
 const skillIcons: SkillIcons = {
-  html: '/html.png',
-  css: '/css.png',
-  tailwind: '/tailwind.png',
-  bootstrap: '/bootstrap.png',
-  javascript: '/javascript.png',
-  typescript: '/typescript.png',
-  vue: '/vue.png',
-  nuxt: '/nuxt.png',
-  vee: '/vee.png',
-  pinia: '/pinia.png',
-  git: '/git.png',
-  github: '/github.png'
+  html: "/html.png",
+  css: "/css.png",
+  tailwind: "/tailwind.png",
+  bootstrap: "/bootstrap.png",
+  javascript: "/javascript.png",
+  typescript: "/typescript.png",
+  vue: "/vue.png",
+  nuxt: "/nuxt.png",
+  vee: "/vee.png",
+  pinia: "/pinia.png",
+  git: "/git.png",
+  github: "/github.png",
 };
-
 
 function showNextSkill() {
   if (currentIndex.value < skillButtons.value.length) {
     const currentButton = skillButtons.value[currentIndex.value];
     const skillName = skills[currentIndex.value];
 
-    skillImage.value = '';
+    skillImage.value = "";
 
     nextTick(() => {
       if (skillImageContainer.value) {
         skillImage.value = skillIcons[skillName];
 
-        currentButton.style.display = 'inline-block';
+        currentButton.style.display = "inline-block";
         currentIndex.value++;
 
         animationTimeout = setTimeout(showNextSkill, 1000);
@@ -66,8 +82,12 @@ function showNextSkill() {
 }
 
 onMounted(() => {
-  skillButtons.value = Array.from(document.querySelectorAll('.skill-button')) as HTMLElement[];
-  skillImageContainer.value = document.querySelector('.skill-image-container') as HTMLElement;
+  skillButtons.value = Array.from(
+    document.querySelectorAll(".skill-button")
+  ) as HTMLElement[];
+  skillImageContainer.value = document.querySelector(
+    ".skill-image-container"
+  ) as HTMLElement;
   showNextSkill();
 });
 
@@ -78,10 +98,17 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <div class="flex flex-col md:flex-row justify-between items-center h-auto md:h-[82vh] px-2">
+    <div
+      class="flex flex-col md:flex-row justify-between items-center h-auto md:h-[82vh] px-2"
+    >
       <div class="relative w-full md:w-1/3 mb-6 md:mb-0">
-        <div class="absolute w-[385px] h-[500px] md:w-[390px] md:h-[520px] mt-4 md:mt-0 bg-gradient-to-t from-black to-yellow-400 rounded-lg dark:bg-gradient-to-t dark:to-blue-600"></div>
-        <NuxtImg class="w-[390px] relative z-10 mr-24" src="/people_skills.png" />
+        <div
+          class="absolute w-[385px] h-[500px] md:w-[390px] md:h-[520px] mt-4 md:mt-0 bg-gradient-to-t from-black to-yellow-400 rounded-lg dark:bg-gradient-to-t dark:to-blue-600"
+        ></div>
+        <NuxtImg
+          class="w-[390px] relative z-10 mr-24"
+          src="/people_skills.png"
+        />
         <div class="skill-image-container">
           <NuxtImg class="skill-image" :src="skillImage" alt="Skill Icon" />
         </div>
@@ -89,17 +116,23 @@ onUnmounted(() => {
       <div class="w-full md:w-2/3">
         <h1 class="text-3xl text-blue-800 flex gap-4 items-center">
           <NuxtImg class="w-6" src="/right.png" />
-          {{ $t('Skills') }}
+          {{ $t("Skills") }}
         </h1>
         <ol class="grid md:grid-cols-6 grid-cols-3 gap-2 mt-4">
           <li v-for="skill in skills" :key="skill">
-            <button class="skill-button border py-2 px-4 w-32 rounded-lg hover:bg-blue-600 mt-1" :data-skill="skill" style="display: none;">
+            <button
+              class="skill-button border py-2 px-4 w-32 rounded-lg hover:bg-blue-600 mt-1"
+              :data-skill="skill"
+              style="display: none"
+            >
               {{ skill }}
             </button>
           </li>
         </ol>
         <NuxtLink to="/contact">
-          <button class="bg-blue-800 text-white py-2 px-4 mt-8 rounded-lg">{{ $t('Contact') }}</button>
+          <button class="bg-blue-800 text-white py-2 px-4 mt-8 rounded-lg">
+            {{ $t("Contact") }}
+          </button>
         </NuxtLink>
       </div>
     </div>
@@ -151,7 +184,6 @@ onUnmounted(() => {
   .w-full {
     width: 100%;
   }
-
 }
 </style>
 

@@ -211,7 +211,6 @@
   "exclude": [
     "../dist",
     "../node_modules",
-    "../../node_modules",
     "../node_modules/.pnpm/nuxt@3.15.1_@parcel+watcher@2.5.0_@types+node@22.10.5_db0@0.2.1_eslint@9.17.0_jiti@2.4.2__ior_m2dghto3gxql4daay5coa5iy5u/node_modules/nuxt/node_modules",
     "../node_modules/.pnpm/@nuxt+devtools@1.7.0_rollup@4.30.0_vite@6.0.7_@types+node@22.10.5_jiti@2.4.2_terser@5.37.0_ya_ipnqj56j6mxb74sfqkxcvfcrn4/node_modules/@nuxt/devtools/node_modules",
     "../node_modules/.pnpm/@vueuse+nuxt@12.3.0_magicast@0.3.5_nuxt@3.15.1_@parcel+watcher@2.5.0_@types+node@22.10.5_db0@_ta2beuoeo6aqcpebrweyhgpi2y/node_modules/@vueuse/nuxt/node_modules",
