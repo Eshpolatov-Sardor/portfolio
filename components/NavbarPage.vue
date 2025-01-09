@@ -14,7 +14,7 @@
         <NuxtLink to="/skills" class="text-white hover:underline">{{ $t('Skills') }}</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/contact" class="text-white hover:underline">{{ $t('Contact') }}</NuxtLink>
+        <NuxtLink to="/text" class="text-white hover:underline">{{ $t('Contact') }}</NuxtLink>
       </li>
       <li>
         <DarkToggle />
