@@ -12,7 +12,7 @@
         <p class="text-xl leading-8 opacity-50 md:w-[550px] w-96">
           {{ $t("Profession") }}
         </p>
-        <NuxtLink to="contact">
+        <NuxtLink to="text">
           <button class="bg-blue-800 text-white py-2 px-4 mt-8 rounded-lg">
             {{ $t("Contact") }}
           </button>
