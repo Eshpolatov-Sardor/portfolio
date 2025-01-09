@@ -17,7 +17,7 @@
         </a>
       </li>
       <li>
-        <a href="https:eshpolatovsardor@gmail.com" class="hover:underline">
+        <a href="mailto:eshpolatovsardor@gmail.com" class="hover:underline">
           {{ $t("Email") }}
         </a>
       </li>
@@ -61,4 +61,3 @@ a:hover {
   color: #2b6cb0;
 }
 </style>
-  
